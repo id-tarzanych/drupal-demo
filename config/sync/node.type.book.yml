@@ -1,0 +1,16 @@
+uuid: 19bea271-09e7-4dc9-8aba-2f7d35ddced0
+langcode: pl
+status: true
+dependencies:
+  enforced:
+    module:
+      - book
+_core:
+  default_config_hash: 2gWGA-X4ERc4McStS7cMEG3ZBpDEqfNRDPTjB1v674Y
+name: 'Strona książki'
+type: book
+description: '<em>Książki</em> posiadają wbudowaną nawigację hierarchiczną. Do wykorzystania przy podręcznikach i przewodnikach.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

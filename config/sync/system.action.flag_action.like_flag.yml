@@ -1,0 +1,15 @@
+uuid: 7a34c66f-2786-40fc-a0ea-39cd6c62bad7
+langcode: pl
+status: true
+dependencies:
+  config:
+    - flag.flag.like
+  module:
+    - flag
+id: flag_action.like_flag
+label: 'Like ten element'
+type: node
+plugin: 'flag_action:like_flag'
+configuration:
+  flag_id: like
+  flag_action: flag

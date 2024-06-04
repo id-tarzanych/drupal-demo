@@ -1,0 +1,15 @@
+uuid: 01721298-271a-41fe-b8e0-e20aa562c4b5
+langcode: pl
+status: true
+dependencies:
+  config:
+    - flag.flag.like
+  module:
+    - flag
+id: flag_action.like_unflag
+label: 'Unlike ten element'
+type: node
+plugin: 'flag_action:like_unflag'
+configuration:
+  flag_id: like
+  flag_action: unflag

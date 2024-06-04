@@ -1,0 +1,16 @@
+uuid: 79aa0a30-5665-4498-be94-71b26dc088f0
+langcode: pl
+status: false
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - book
+_core:
+  default_config_hash: OXuxCt4bGudOfBFhCuM9s28iPuKFMNRUevw6EDotHT8
+id: node.print
+label: Drukuj
+description: ''
+targetEntityType: node
+cache: true

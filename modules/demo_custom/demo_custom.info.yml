@@ -1,0 +1,5 @@
+name: 'Demo Custom'
+type: module
+description: 'Generic module for custom functionality'
+package: Custom
+core_version_requirement: ^10 || ^11

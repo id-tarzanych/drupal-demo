@@ -1,0 +1,24 @@
+uuid: d90a445f-eabf-4eae-b4d4-9c80a04e4405
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.book
+_core:
+  default_config_hash: rYbAZX1eKDo7CVRnBnpYgdmk8HQo5IcKhzePCx9LCZY
+id: node.book.promote
+field_name: promote
+entity_type: node
+bundle: book
+label: 'Promowany na stronie głównej'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

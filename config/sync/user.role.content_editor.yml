@@ -1,0 +1,67 @@
+uuid: 96280981-3b96-4564-97d3-344aff47fb0f
+langcode: pl
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - filter.format.basic_html
+    - filter.format.restricted_html
+    - node.type.article
+    - node.type.book
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - block_content
+    - book
+    - comment
+    - contextual
+    - file
+    - filter
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
+id: content_editor
+label: 'Edytor treści'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access printer-friendly version'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create basic block content'
+  - 'create new books'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete any basic block content'
+  - 'delete any basic block content revisions'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own book content'
+  - 'delete own files'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any basic block content'
+  - 'edit any book content'
+  - 'edit own article content'
+  - 'edit own book content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert any basic block content revisions'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view book revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

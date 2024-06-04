@@ -1,0 +1,30 @@
+uuid: 9957ff54-fcc2-4894-b04f-ba8313d522fe
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+id: like
+label: Like
+bundles:
+  - book
+entity_type: node
+global: false
+flag_short: Polub
+flag_long: ''
+flag_message: 'Polubiłeś tę stronę.'
+unflag_short: Odlub
+unflag_long: ''
+unflag_message: 'Odlubiłeś tę stronę.'
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

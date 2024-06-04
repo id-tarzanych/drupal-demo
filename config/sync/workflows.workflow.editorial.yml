@@ -1,0 +1,67 @@
+uuid: f3f8b847-109b-446b-a9af-ba6a4c601141
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.book
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T7gMMyFbTYLalxpIOnzJebvek2OW0b1RgLVE9I2y228
+id: editorial
+label: Redakcyjny
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Zarchiwizowane
+      weight: 5
+      published: false
+      default_revision: true
+    draft:
+      label: 'Wersja robocza'
+      weight: -5
+      published: false
+      default_revision: false
+    published:
+      label: Opublikowane
+      weight: 0
+      published: true
+      default_revision: true
+  transitions:
+    archive:
+      label: Zarchiwizuj
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Przywróć wersję roboczą'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Przywróć
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Stwórz nową wersję roboczą'
+      from:
+        - draft
+        - published
+      to: draft
+      weight: 0
+    publish:
+      label: Opublikuj
+      from:
+        - draft
+        - published
+      to: published
+      weight: 1
+  entity_types:
+    node:
+      - book
+  default_moderation_state: draft

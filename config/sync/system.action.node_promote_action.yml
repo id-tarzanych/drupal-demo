@@ -1,0 +1,13 @@
+uuid: 2bf1e084-9498-4f39-ba19-3144264fb4d6
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
+id: node_promote_action
+label: 'Opublikuj zawartości na stronie głównej'
+type: node
+plugin: node_promote_action
+configuration: {  }
